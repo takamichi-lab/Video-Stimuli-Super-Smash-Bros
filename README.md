@@ -1,4 +1,4 @@
-# matsushita25_cog_dataset
+# matsushita25-cog-dataset
 This repository contains the open-source dataset published in the short paper at IEEE CoG 2025.
 
 ## Creating a dataset
