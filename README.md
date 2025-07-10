@@ -1,5 +1,8 @@
 # Video Stimuli for Measuring Time Delay Tolerance in Third-Person Live Commentary for Super Smash Bros. Ultimate
-This repository contains the open-source dataset published in the short paper at IEEE CoG 2025.
+- This repository contains the open-source dataset published in the short paper at IEEE CoG 2025.
+- This study proposes a methodology for measuring the acceptable delay tolerance for third-person game commentary.
+- This site describes how to create videos shown to subjects in order to measure the acceptable delay tolerance.
+- ![Overview](./overview.png)
 
 
 ## Download Original Video
