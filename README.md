@@ -2,7 +2,8 @@
 - This repository contains the open-source dataset published in the short paper at IEEE CoG 2025.
 - This study proposes a methodology for measuring the acceptable delay tolerance for third-person game commentary.
 - This site describes how to create videos shown to subjects in order to measure the acceptable delay tolerance.
-- ![Overview](./overview.png)
+- Please refer to the image below for an overview of the acceptable delay tolerance.
+- ![Overview](./overview.pdf)
 
 
 ## Download Original Video
