@@ -1,7 +1,8 @@
-# matsushita25-cog-dataset
+# Video Stimuli for Measuring Time Delay Tolerance in Third-Person Live Commentary for Super Smash Bros. Ultimate
 This repository contains the open-source dataset published in the short paper at IEEE CoG 2025.
 
-## Creating a dataset
+
+## Download Original Video
 The video set for this experiment was created based on 32 one-on-one videos collected from [SMASH corpus](https://ss-takashi.sakura.ne.jp/corpus/smash/).
 SMASH corpus includes match videos (without audio), commentary audio, and CSV files annotated with speech start and end times as well as topic tags.
 
@@ -18,14 +19,21 @@ SMASH corpus includes match videos (without audio), commentary audio, and CSV fi
 - `experience`: How much has the evaluator played this game? Competitive (日常的に頻繁にやっており，ランク対戦など他者と競うプレイをすることが多い), Enjoy (日常的に頻繁にやっており，競うより楽しむことを目的としてプレイをすることが多い), Sometimes (機会があれば，家族や友人とプレイをすることもある程度), Only seen (自分でプレイした経験はないが，対戦動画をみたことがある程度), Never (知らない). 
 - `third_person_commentary`: Have you ever watched third-person commentary (commentary by someone other than the player)? Often (よく見る), Sometimes (数回程度見たことがある), Never (見たことがない).
 - `first_person_commentary`: Have you ever watched first-person commentary (player commentary)? Often (よく見る), Sometimes (数回程度見たことがある), Never (見たことがない).
-- `place`: Place where the evaluation was performed (input format).
+- `place`: Place where the evaluation was performed.
 - `user_id`: Evaluator ID (same ID means same evaluator).
-- `score`: Evaluator score.
-- `original_file`: It is stated which video from the SMASH corpus was used to create the presented video stimulus.
+- `score`: 5-point score on MOS.
+- `original_file`: Number of which original video was used as a reference.
 - `delay`: The number of seconds that the audio is delayed relative to the video (plus means the audio is delayed, minus means the audio is early).
 - `utterance_id`: A number indicating the number of the evaluated utterance in the original video of the SMASH corpus.
 - `topic_tag`: Topic tag of the evaluated utterance.
 
+## Creating a Dataset
+- Download data from [SMASH corpus](https://ss-takashi.sakura.ne.jp/corpus/smash/).
+- Determine the video stimulus to create by referring to `original_file` and `utterance_id` in result.csv.
+- The data included in [SMASH corpus](https://ss-takashi.sakura.ne.jp/corpus/smash/) includes csv files that include utterance numbers, etc., so please refer to them together with `utterance_id`.
+- The duration of one video stimulus was at most 20 seconds, and included the target utterance (`utterance_id`) and the N utterances before it.
+- The number of utterances is the maximum number within 20 seconds.
+- Synchronize the match video and live audio by delaying the audio by the value of `delay`.
 
 ## License
 - MIT
