@@ -3,7 +3,7 @@
 - This study proposes a methodology for measuring the acceptable delay tolerance for third-person game commentary.
 - This site describes how to create videos shown to subjects in order to measure the acceptable delay tolerance.
 - Please refer to the image below for an overview of the acceptable delay tolerance.
-- ![Overview](./overview.pdf)
+- ![Overview](./overview.png)
 
 
 ## Download Original Video
